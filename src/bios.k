@@ -14,8 +14,10 @@ var, i = "BIOS rev:   v1.01";;
 );
 reset(
 ppcemu_setBootFlag(flag: "!start");
+ppcemu_setPowerState("turnoff");
+ppcemu_setPowerState("turnon");
 );
 start(sender: "ppcemu_flag(!start)"
 ppcemu_start(load: "ldr.k");
 );
-/*BIOS Revision 1*/
+/*BIOS Revision 1.01*/
